@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="productEvent" />
+        <module name="kafkaConsumer" />
+        <module name="mainApp" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="consumer" target="21" />
+      <module name="Consumer.main" target="21" />
+      <module name="Consumer.test" target="21" />
+      <module name="kafkaConsumer.main" target="21" />
+      <module name="kafkaConsumer.test" target="21" />
+      <module name="productEvent.main" target="21" />
+      <module name="productEvent.test" target="21" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="kafkaConsumer" options="-parameters" />
+      <module name="mainApp" options="-parameters" />
+      <module name="productEvent" options="-parameters" />
+    </option>
+  </component>
+</project>
